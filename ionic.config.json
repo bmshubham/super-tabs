@@ -1,0 +1,7 @@
+{
+  "name": "supertabs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
