@@ -7,8 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <super-tabs id="mainTabs" selectedTabIndex="1" toolbarColor="light" toolbarBackground="dark" indicatorColor="light" badgeColor="light" [config]="{ sideMenu: 'left' }" (tabSelect)="onTabSelect($event)">
+    <super-tab [root]="page1" title="First page" icon="home" id="homeTab"></super-tab>
+    <super-tab [root]="page2" title="Second page" icon="pin" id="locationTab"></super-tab>
+    <super-tab [root]="page3" title="Third page" icon="heart" id="favouritesTab"></super-tab>
+  </super-tabs>
 </ion-content>

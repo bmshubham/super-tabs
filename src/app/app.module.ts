@@ -4,22 +4,34 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { SuperTabsModule } from 'ionic2-super-tabs';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { FirstPage } from './../pages/first/first';
+import { SecondPage } from './../pages/second/second';
+import { ThirdPage } from './../pages/third/third';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    FirstPage,
+    SecondPage,
+    ThirdPage
   ],
   imports: [
     BrowserModule,
+    SuperTabsModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    FirstPage,
+    SecondPage,
+    ThirdPage
   ],
   providers: [
     StatusBar,
